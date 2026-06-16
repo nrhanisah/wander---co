@@ -1,0 +1,276 @@
+/* --- RESET ASAS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+}
+
+.logo-container { display: flex; align-items: center; }
+.logo-box { background-color: antiquewhite; color: white; padding: 8px 12px; font-weight: bold; font-size: 18px; letter-spacing: 1px; }
+.logo-text { font-size: 22px; font-weight: 300; margin-left: 5px; color: #333; }
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #210440; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links a.active {
+    color: #e5958e; 
+}
+.contact-info { font-weight: bold; font-size: 14px; color: #000; }
+
+/* --- CONTAINER UTAMA --- */
+main { padding: 40px 5%; }
+
+/* --- 4-COLUMN GRID LAYOUT --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- REKA BENTUK KAD --- */
+.card {
+    background: #ffba00;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.card-image { width: 100%; height: 100%; object-fit: cover; }
+
+.card-tags {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: #555;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tag-item { display: flex; align-items: center; gap: 4px; }
+.icon-red { color: #21044D; }
+
+.card-content {
+    padding: 30px 18px 20px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #111;
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+
+.card-divider { border-top: 1px solid #f2f2f2; margin-bottom: 15px; }
+.card-footer { display: flex; justify-content: space-between; align-items: flex-end; }
+.price-label { font-size: 11px; color: #999; }
+.price-value { font-size: 16px; font-weight: 700; color: #21044D; margin-top: 2px; }
+.explore-btn { display: flex; align-items: center; gap: 4px; text-decoration: none; color: #000; font-weight: bold; font-size: 12px; }
+
+/* --- PAGINATION --- */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.page-num { text-decoration: none; color: #777; cursor: pointer; }
+
+.page-num.active {
+    background-color: #21044D;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.page-next { text-decoration: none; color: #777; font-weight: bold; }
+
+.floating-buttons { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 10px; z-index: 1000; }
+.btn-float { width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-size: 18px; }
+.btn-up { background-color: #21044D; }
+.btn-whatsapp { background-color: #25D366; }
+
+/* Responsive untuk skrin laptop kecil/tablet */
+@media (max-width: 1024px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    nav ul { display: none; } /* Sorok nav di skrin kecil */
+}
+
+
+/* ==========================================================================
+   KOD TAMBAHAN (UNTUK HALAMAN DETAILS.HTML)
+   ========================================================================== */
+.hero-section {
+    background: #fff;
+    padding: 40px 5% 20px 5%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.gallery-badge {
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+    background: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;
+    gap: 15px;
+    padding: 0 5%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.info-bar {
+    display: flex;
+    background: #fff;
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+    gap: 40px;
+    font-size: 13px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item .label { color: #888; font-size: 11px; }
+.info-item .value { font-weight: bold; color: #333; }
+.info-icon { font-size: 20px; color: #21044D; }
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 30px 5%;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: #e0e0e0;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #555;
+}
+
+.tab-btn.active {
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #21044D;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
+.tab-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+}
+
+.content-section { margin-bottom: 25px; }
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #21044D;
+}
