@@ -1,0 +1,176 @@
+body {
+	font-family: Segoe UI, Tahoma, Geneva, Verdana;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #2e2e2e;
+}
+
+#header {
+	background-color: #f9c846;
+	padding: 25px 50px;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+	clear: both;
+}
+
+#header .logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: 4c5c68;
+    float: left;
+    letter-spacing: 0.5px;
+}
+
+#header .logo span {
+    color: #e74c3c;
+}
+
+#navigation {
+    float: right;
+    margin-top: 5px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #210440; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links a.active {
+    color: #e5958e; 
+} 
+
+#hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/travel-hero.jpg') no-repeat center center/cover;
+    background-color: #16a085;
+    text-align: center;
+    padding: 120px 20px;
+    color: #ffffff;
+}
+
+#hero-banner h1 {
+    font-size: 46px;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+#hero-banner p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #a8c686;
+}
+
+/* Layout Framework Core */
+#main-content {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    clear: both;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Grid Boxes for Travel Segments */
+.feature-box {
+    box-sizing: border-box;
+    width: 31%;
+    float: left;
+    margin: 0 1.1%;
+    background: #c5c6c7;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-top: 4px solid #74cbe3;
+}
+
+.feature-box h3 {
+    margin-top: 0;
+    color: #2d2d2d;
+}
+
+.text-link {
+    color: #3f8efc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section Specifics */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.about-section ul {
+    padding-left: 20px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section Rules */
+#footer {
+    background-color: #74cbe3;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    font-size: 13px;
+    clear: both;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+
+#footer .disclaimer {
+    color: #2e2e2e; /* Gives visibility to project declaration area */
+    font-style: italic;
+    margin-bottom: 15px;
+}
