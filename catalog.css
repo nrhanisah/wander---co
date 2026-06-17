@@ -290,3 +290,82 @@ main { padding: 40px 5%; }
     color: #666;
     margin-bottom: 8px;
 }
+
+.catalog-hero {
+    position: relative;
+    width: 100%;
+    height: 380px; 
+    background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.catalog-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+}
+.catalog-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.catalog-hero .hero-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffb703; 
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.catalog-hero .hero-main-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.catalog-hero .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+/* Lencana Nilai Tambahan (Badges) */
+.catalog-hero .hero-badge-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.catalog-hero .hero-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
