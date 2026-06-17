@@ -1,0 +1,488 @@
+/* --- RESET ASAS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+}
+
+.logo-container { display: flex; align-items: center; }
+.logo-box { background-color: antiquewhite; color: white; padding: 8px 12px; font-weight: bold; font-size: 18px; letter-spacing: 1px; }
+.logo-text { font-size: 22px; font-weight: 300; margin-left: 5px; color: #333; }
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #210440; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links a.active {
+    color: #e5958e; 
+}
+.contact-info { font-weight: bold; font-size: 14px; color: #000; }
+
+/* --- CONTAINER UTAMA --- */
+main { padding: 40px 5%; }
+
+/* --- 4-COLUMN GRID LAYOUT --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- REKA BENTUK KAD --- */
+.card {
+    background: #ffba00;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.card-image { width: 100%; height: 100%; object-fit: cover; }
+
+.card-tags {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: #555;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tag-item { display: flex; align-items: center; gap: 4px; }
+.icon-red { color: #21044D; }
+
+.card-content {
+    padding: 30px 18px 20px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #111;
+    margin-bottom: 25px;
+    min-height: 60px;
+}
+
+.card-divider { border-top: 1px solid #f2f2f2; margin-bottom: 15px; }
+.card-footer { display: flex; justify-content: space-between; align-items: flex-end; }
+.price-label { font-size: 11px; color: #999; }
+.price-value { font-size: 16px; font-weight: 700; color: #21044D; margin-top: 2px; }
+.explore-btn { display: flex; align-items: center; gap: 4px; text-decoration: none; color: #000; font-weight: bold; font-size: 12px; }
+
+/* --- PAGINATION --- */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.page-num { text-decoration: none; color: #777; cursor: pointer; }
+
+.page-num.active {
+    background-color: #21044D;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.page-next { text-decoration: none; color: #777; font-weight: bold; }
+
+.floating-buttons { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 10px; z-index: 1000; }
+.btn-float { width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-size: 18px; }
+.btn-up { background-color: #21044D; }
+.btn-whatsapp { background-color: #25D366; }
+
+/* Responsive untuk skrin laptop kecil/tablet */
+@media (max-width: 1024px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    nav ul { display: none; } /* Sorok nav di skrin kecil */
+}
+
+
+/* ==========================================================================
+   KOD TAMBAHAN (UNTUK HALAMAN DETAILS.HTML)
+   ========================================================================== */
+.hero-section {
+    background: #fff;
+    padding: 40px 5% 20px 5%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.gallery-badge {
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+    background: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;
+    gap: 15px;
+    padding: 0 5%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.info-bar {
+    display: flex;
+    background: #fff;
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+    gap: 40px;
+    font-size: 13px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item .label { color: #888; font-size: 11px; }
+.info-item .value { font-weight: bold; color: #333; }
+.info-icon { font-size: 20px; color: #21044D; }
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 30px 5%;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: #e0e0e0;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #555;
+}
+
+.tab-btn.active {
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #21044D;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
+.tab-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+}
+
+.content-section { margin-bottom: 25px; }
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #21044D;
+}
+.trip-details-specs {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #333;
+}
+.trip-details-specs dt {
+    font-weight: bold;
+    color: #444;
+    margin-top: 8px;
+}
+.trip-details-specs dd {
+    margin-left: 0;
+    color: #666;
+    margin-bottom: 8px;
+}
+div.catalog-banner-baru {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 360px !important;
+    background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920') !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 40px !important;
+    padding: 50px 20px !important;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+div.catalog-banner-baru .banner-overlay-baru {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.65) !important; /* Memastikan teks putih kekal kontra dan jelas */
+    z-index: 1 !important;
+}
+
+div.catalog-banner-baru .banner-content-baru {
+    position: relative !important;
+    z-index: 2 !important;
+    color: #ffffff !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+div.catalog-banner-baru .banner-subtitle-baru {
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    color: #ffb703 !important; /* Warna accent emas */
+    font-weight: 700 !important;
+    display: inline-block !important;
+    margin-bottom: 12px !important;
+}
+
+div.catalog-banner-baru .banner-main-title-baru {
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 15px 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+div.catalog-banner-baru .banner-description-baru {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #e5e5e5 !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+}
+
+
+/* === 3. MERCHANDISE GRID LAYOUT === */
+.merch-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.merch-section-title {
+    font-size: 28px;
+    color: #2b2d42;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.merch-section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffb703;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Grid Susunan Produk (4 Kolum) */
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Kad Produk */
+.merch-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+
+.merch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontena Gambar & Lencana Tag */
+.merch-img-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #f7f7f7;
+}
+
+.merch-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.merch-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ffb703;
+    color: #2b2d42;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* Informasi Produk */
+.merch-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.merch-name {
+    font-size: 18px;
+    color: #2b2d42;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.merch-desc {
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+/* Bahagian Harga & Butang */
+.merch-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.merch-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2b2d42;
+}
+
+.merch-btn {
+    background-color: #2b2d42;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.merch-btn:hover {
+    background-color: #ffb703;
+    color: #2b2d42;
+}
