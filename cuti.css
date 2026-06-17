@@ -1,0 +1,444 @@
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #210440; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links a.active {
+    color: #e5958e; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        color: #333333;
+        padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #210440;
+            font-size: 3em;
+        }
+        p.subtitle {
+            text-align:center;
+            color: #ffffff;margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+.catalog-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+}
+
+.card-link {
+text-decoration: none;
+color: inherit;
+display: block;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-link:hover {
+transform: translateY(-5px);
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    
+        }
+        .card-link:hover .card {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #2d3748;
+            text-transform: uppercase;
+        }
+
+        .card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            font-size: 1.4em;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 0.95em;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #edf2f7;
+            padding-top: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #ffba00;
+        }
+        .arrow {
+            font-size: 1.2em;
+            transition: transform 0.2s ease;
+        }
+        .card-link:hover .arrow {
+            transform: translateX(5px);
+        }
+
+        /*gambar*/
+.card-image {
+    height: 200px;             
+    background-size: cover;    
+    background-position: center; 
+    position: relative;       
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px;
+}
+
+.img-kundasang { 
+    background-image: url(https://www.melancong.my/wp-content/uploads/2021/08/Pakej-Kota-Kinabalu-Kundasang-Kota-Belud-Terkini.jpg); 
+}
+.img-semporna { 
+    background-image: url(https://image.kkday.com/v2/image/get/s1.kkday.com/product_24911/20230515004154_Hci7K/jpg); 
+}
+.img-jb { 
+    background-image: url(https://trevallog.com/wp-content/uploads/2022/04/Skyscape-at-Menara-JLand-Johor-Bahru-Sky-Bridge-1.jpg.webp); 
+}
+.img-melaka { 
+    background-image: url(https://www.visitmelaka.com.my/images/recreation/encore.jpg); 
+}
+.img-kl { 
+    background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/o52yyykrizo0b4th1uuk.jpg); 
+}
+.img-langkawi { 
+    background-image: url(https://apicms.thestar.com.my/uploads/images/2025/02/21/3177830.webp); 
+}
+.img-indo { 
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a0/b8/9b/photo0jpg.jpg?w=1200&h=-1&s=1); 
+}
+.img-hongkong { 
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/db/3a/a6/1881.jpg?w=900&h=500&s=1); 
+}
+.img-thai { 
+    background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,q_60/Mobile/City/p2pfj38lzjf7wsd6gobn.jpg); 
+}
+.img-sg { 
+    background-image: url(https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/5b/38/f9.jpg); 
+}
+.img-japan { 
+    background-image: url(https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/08/Mount-Fuji.jpg); 
+}
+.img-balkan { 
+    background-image: url(https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/6b/bb/a0.jpg); 
+}
+.img-taiwan { 
+    background-image: url(https://i0.wp.com/www.cityandsee.com/wp-content/uploads/2018/05/Yehliu-19.jpg?fit=4338%2C2892&ssl=1); 
+}
+.img-switzer { 
+    background-image: url(https://www.wayfaringwithwagner.com/wp-content/uploads/2018/09/one-day-in-zurich-35.jpg); 
+}
+.img-scandi { 
+    background-image: url(https://media.cntraveler.com/photos/5bfdb12a1b3466234d8136c5/master/pass/GettyImages-1045586638.jpg); 
+}
+
+/*itinerary*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #ffba00;
+    margin: 0;
+    padding: 0;
+}
+
+
+.itinerary-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.itinerary-header {
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.itinerary-header h1 {
+    font-size: 3em;
+    z-index: 2;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+.itinerary-header .duration-badge {
+    display:inline;
+    z-index: 2;
+    background-color: #210440;
+    color: #ffba00;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+.badge-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.itinerary-badge {
+    background-color: #210440;
+    color: #ffba00;            
+    padding: 8px 18px;
+    border-radius: 20px;       
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.itinerary-banner {
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;        
+    margin-right: -50vw;
+    height: 350px;             
+    background-size: cover;     
+    background-position: center;
+    display: flex;
+    align-items: center;        
+    justify-content: center;    
+    margin-bottom: 50px;
+    overflow: hidden;
+    
+}
+
+.itinerary-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.30); 
+    z-index: 1;
+}
+
+.banner-malaysia{
+    background-image: url(https://www.reuters.com/resizer/v2/JRC6Z5I6UJMHRHNRIG2JJEAP5A.jpg?auth=142345befc5d822d990a0da5e30976a711f75619e5627b7471fd079863b1b6de&width=1920&quality=80);
+}
+.banner-langkawi {
+    background-image: url(https://panoramalangkawi.com/wp-content/uploads/2021/06/shutterstock_1286202790-1.jpg);
+}
+.banner-kundasang {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mount_Kinabalu_from_Kundasang_Town.jpg/1280px-Mount_Kinabalu_from_Kundasang_Town.jpg);
+}
+.banner-semporna {
+    background-image: url(https://seastarsemporna.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-05-at-11.40.133.jpeg);
+}
+.banner-jb {
+    background-image: url(https://sgjbtaxis.com/wp-content/uploads/2025/03/things-night-jb-6-1.jpg);
+}
+.banner-melaka {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRYRzmgkZx2f2e_EHJGlESUI_ueUWX-hZY_MeK-2s-w&s=10);
+}
+.banner-kl {
+    background-image: url(https://www.warisankl.my/clients/asset_30783ACB-EA95-446E-8A11-9AC9134F0D37/contentMS/img/BSAS%208.jpg);
+}
+.banner-indo {
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/e2/49/77/heritage-factory-outlet.jpg?w=1200&h=-1&s=1);
+}
+.banner-hongkong {
+    background-image: url(https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/vision-dam/digital/hkdl-platform/hkdl-standard-assets/finder_hk/id-intl/system/images/hkdl-castle2.jpg?2022-05-22T01:18:53+00:00);
+}
+.private {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/ca/View_from_the_airplane_window.jpg);
+}
+.banner-japan {
+    background-image: url(https://i0.wp.com/www.touristjapan.com/wp-content/uploads/2010/09/Shutterstock_1365397976-scaled.jpg?fit=6144%2C4099&ssl=1);
+}
+.banner-thai {
+    background-image: url(https://www.pelago.com/img/destinations/phuket/0502-0403_phuket-xlarge.jpg);
+}
+.banner-sg {
+    background-image: url(https://chrisandwrensworld.com/wp-content/uploads/2025/07/marina-bay-sunset.jpeg);
+}
+.banner-taiwan {
+    background-image: url(https://cdn.getyourguide.com/img/tour/f7bce5408c047a1dd8cc664abba82e89e50333c237f758e124f790de76c2a5e3.png/68.jpg);
+}
+.banner-switzer {
+    background-image: url(https://cdn.hometogo.net/assets/media/original/20251001/68dd0f13020f4.jpg);
+}
+.banner-scandinavia {
+    background-image: url(https://i.guim.co.uk/img/media/af4c0d72e3b8d8069a646e29f8c85a8ab5ec29f5/0_157_4992_2995/master/4992.jpg?width=1200&quality=85&auto=format&fit=max&s=7fb4911b83157af163cf4c5c47c1d24f);
+}
+.banner-balkan {
+    background-image: url(https://img1.advisor.travel/1200x630px-Igman_4.jpg);
+}
+
+.timeline {
+    position:relative;
+    border-left: 3px solid #cbd5e1; 
+    margin-left: 30px;
+    padding-left: 30px;
+    list-style: none;
+}
+
+
+.timeline-day {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+
+.timeline-day::before {
+    content: "";
+    position: absolute;
+    left: -43px; 
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffba00; 
+    border: 4px solid #f8fafc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+.day-title {
+    font-size: 1.4em;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.activity-item:last-child {
+    margin-bottom: 0;
+}
+
+.activity-text {
+    color: #475569;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: #1e293b;
+}
+
+.book-btn {
+    display: inline-block;
+    background-color: #ffba00; 
+    color: #ffffff;            
+    font-size: 1em;
+    text-decoration: none;     
+    padding: 12px 28px;
+    border-radius: 30px;      
+    border: none;              
+    cursor: pointer;
+    box-shadow: 0 4px 6px #e5958e;
+    transition: all 0.3s ease;
+    margin-left: 453px;
+}
+
+.book-btn:hover {
+    background-color: #e5958e;
+    box-shadow: 0 6px 12px rgba(29, 78, 216, 0.3);
+    transform: translateY(-2px);
+}
+
+.book-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(29, 78, 216, 0.2);
+}
