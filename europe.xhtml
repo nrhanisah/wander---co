@@ -7,80 +7,229 @@
 </head>
 <body>
 
-    <!-- Minimal Header Top Bar -->
-    <div class="navbar" style="padding: 15px 40px;">
-        <div class="logo">Wander &amp; Co.</div>
+    <div class="navbar" style="padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+        <div class="logo" style="font-weight: bold; color: #210440; font-size: 24px;">Wander &amp; Co.</div>
         <div>
-            <a href="top.xhtml" class="read-more" style="text-decoration: none; font-size: 14px;">&larr; Back to Destinations</a>
+            <a href="top.xhtml" style="text-decoration: none; color: #210440; font-weight: bold; font-size: 13px; padding: 10px 20px; border: 1px solid #e5958e; border-radius: 30px; letter-spacing: 0.5px; transition: all 0.3s ease; background: transparent;" 
+               onmouseover="this.style.background='#e5958e'; this.style.color='#ffffff';" 
+               onmouseout="this.style.background='transparent'; this.style.color='#210440';">
+                &larr; Back to Destinations
+            </a>
         </div>
     </div>
 
-    <!-- Main Container -->
     <div class="container">
         
-        <div style="text-align: center; margin-bottom: 40px;">
-            <h2 style="font-size: 32px; color: #210440; font-family: 'Georgia', serif; margin-bottom: 10px;">Detailed Country Itinerary</h2>
-            <p style="color: #666666;">Choose the perfect travel blueprint tailored for your team's destination goals.</p>
+        <div style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&amp;w=1200](https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&amp;w=1200'); background-size: cover; background-position: center; padding: 60px 20px; border-radius: 16px; margin-bottom: 40px; margin-top: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+            
+            <h2 style="font-size: 42px; color: #210440; font-family: 'Georgia', serif; margin-bottom: 12px; letter-spacing: 4px; font-weight: bold; text-transform: uppercase;">EUROPE</h2>
+            
         </div>
 
-        <!-- TWO ITINERARIES GRID CONTAINER -->
-        <div class="card-grid" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
-            
-            <!-- ITINERARY 1: STANDARD PACKAGE -->
-            <div class="card" style="padding: 30px; background: #ffffff;">
-                <div style="text-align: center; margin-bottom: 25px;">
-                    <span style="font-size: 30px;">🎒</span>
-                    <h3 style="font-size: 22px; color: #210440; margin: 10px 0 5px 0;">Standard Backpacker Blueprint</h3>
-                    <p style="font-size: 13px; color: #e5958e; font-weight: bold; margin: 0;">ESSENTIAL CULTURAL TRANSIT</p>
-                </div>
-                
-                <hr style="border: 0; border-top: 1px dashed rgba(33, 4, 64, 0.2); margin-bottom: 20px;" />
-                
-                <div class="cat-card-content" style="border-top: none; padding-top: 0;">
-                    <p style="margin-bottom: 15px;"><strong>Day 1: Arrival &amp; Local Walking Tour</strong><br />
-                    Self-guided check-in at boutique local stays followed by an authentic evening street food and cultural market exploration walk.</p>
-                    
-                    <p style="margin-bottom: 15px;"><strong>Day 2: Public Transit Landmark Hunt</strong><br />
-                    Utilize scenic community rail lines to visit primary historic temples, national monuments, and traditional heritage districts.</p>
-                    
-                    <p style="margin-bottom: 0;"><strong>Day 3: Photo Session &amp; Departure</strong><br />
-                    Morning souvenir shopping at regional handicraft centers before boarding standard transit lines back to the flight terminal.</p>
-                </div>
-            </div>
+          <!-- TWO ITINERARIES GRID CONTAINER -->
+        <div class="card-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
 
             <!-- ITINERARY 2: EXECUTIVE PREMIUM PACKAGE -->
-            <div class="card" style="padding: 30px; background: #ffffff; border: 2px solid #ffba00; position: relative;">
-                <!-- Mustard Gold Badge from image_5990a3.png scheme -->
+            <div class="card" style="padding: 30px; background: #ffffff; border: 2px solid #ffba00; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative;">
+
                 <div style="position: absolute; top: -15px; right: 20px; background: #ffba00; color: #210440; font-size: 11px; font-weight: bold; padding: 5px 12px; border-radius: 20px; letter-spacing: 1px;">
                     RECOMMENDED
                 </div>
 
                 <div style="text-align: center; margin-bottom: 25px;">
-                    <span style="font-size: 30px;">✨</span>
-                    <h3 style="font-size: 22px; color: #210440; margin: 10px 0 5px 0;">3-Day Executive Travel Luxury</h3>
-                    <p style="font-size: 13px; color: #ffba00; font-weight: bold; margin: 0;">ULTRA-PREMIUM NETWORKING</p>
+                    <span style="font-size: 30px;"></span>
+                    <h3 style="font-size: 22px; color: #210440; margin: 10px 0 5px 0;">11 Days Aurora</h3>
+                    <p style="font-size: 13px; color: #ffba00; font-weight: bold; margin: 0;">From RM 25,288 PER PAX</p>
                 </div>
                 
                 <hr style="border: 0; border-top: 1px dashed rgba(33, 4, 64, 0.2); margin-bottom: 20px;" />
                 
-                <div class="cat-card-content" style="border-top: none; padding-top: 0;">
-                    <p style="margin-bottom: 15px;"><strong>Day 1: VIP Arrival &amp; Private Cruise</strong><br />
-                    Elite airport chauffeur meeting service straight from the gate, luxury vehicle transfers, and an exclusive evening welcome cruise.</p>
+                <div style="color: #210440; line-height: 1.6;">
+                    <p style="margin-bottom: 15px;"><strong>Day 1: Penang - Transit City</strong><br />
+                    Assemble at Airport for flight to Oslo (The capital of Norway).</p>
                     
-                    <p style="margin-bottom: 15px;"><strong>Day 2: Strategic Summit Panel &amp; Gala</strong><br />
-                    Morning conference briefs inside state-of-the-art tech business districts followed by custom curated luxury dining events.</p>
+                    <p style="margin-bottom: 15px;"><strong>Day 2: Transit City - Oslo (Norway)</strong><br />
+                    Upon arrival, proceed to city orientation tour including City Hall &amp; Vigeland Park. Next, visit Karl Johan Street.</p>
                     
-                    <p style="margin-bottom: 0;"><strong>Day 3: Wellness Spa &amp; Priority Transit</strong><br />
-                    Rejuvenating morning resort spa amenities and final corporate reviews prior to priority private transit back to your private lounge.</p>
+                    <p style="margin-bottom: 0;"><strong>Day 3: Oslo - Kirkenes (Norway) </strong><br />
+                    Transfer to domestic airport for flight to Kirkenes. Upon arrival, tourist may experience to catch King Crab and enjoy Artic King Crab meal.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 4:  Kirkenes - Inari (Findland) - Saariselka (Finland)</strong><br />
+                    Proceed to Inari. Upon arrival visit to Siida Sami Museum. Then, continue to Saariselka.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 5: Saariselka - Luosto - Rovaniemi (Finland)</strong><br />
+                    Tour transfer to Rovaniemi via Luosto. Then, visit to Amethyst Mine. Board the Pendolino up to te Snow mountain top wuth a fabulous view and tourist may enjoy the Aurora experience.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 6: Rovaniemi - Kemi</strong><br />
+                    Visit Santa Claus Village and meet Santa Claus by crossing the magical Artic Circle. Visit Reindeer farm and experience Reindeer Ride.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 7: Kemi - Ranua - Kemi</strong><br />
+                   Visit Ranua Zoo. Next, tourist may experience the Husky Dog Ride.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 8: Kemi - Lulea (Sweden)</strong><br />
+                    Experience Ice Breaker cruise including ice floating event.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 9: Lulea - Stockholm</strong><br />
+                    Transfer to airport for flight to Stockholm. Upon arrival, city orientation include City Hall.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 10: Stockholm - Transit City</strong><br />
+                   Tourist are free by their own leisure before transfer to airport for flight to Penang.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 11: Transit City - Penang</strong><br />
+                    Arrival Penang.</p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px dashed rgba(33, 4, 64, 0.2); margin: 25px 0;" />
+
+     
+                <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 15px; background: rgba(33, 4, 64, 0.02); padding: 15px; border-radius: 10px; text-align: left;">
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; color: #210440; font-size: 13px; font-weight: bold;">Package Includes:</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 1.6; color: #555555;">
+                            <li><span style="color: #210440;">✔</span> 10N hotel accommodation</li>
+                            <li><span style="color: #210440;">✔</span> Daily breakfast and selcted dinners</li>
+                            <li><span style="color: #210440;">✔</span> Airport transfer</li>
+                            <li><span style="color: #210440;">✔</span> Professional English and Malay speaking tour guide</li>
+                            <li><span style="color: #210440;">✔</span> Private transportation throughout the tour</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
+    
+            <div class="card" style="padding: 30px; background: #ffffff; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <span style="font-size: 30px;"></span>
+                    <h3 style="font-size: 22px; color: #210440; margin: 10px 0 5px 0;">10 Days Greece</h3>
+                    <p style="font-size: 13px; color: #e5958e; font-weight: bold; margin: 0;">From RM 13,688 PER PAX</p>
+                </div>
+                
+                <hr style="border: 0; border-top: 1px dashed rgba(33, 4, 64, 0.2); margin-bottom: 20px;" />
+                
+                <div style="color: #210440; line-height: 1.6;">
+                      <p style="margin-bottom: 15px;"><strong>Day 1: Penang - Transit City</strong><br />
+                    Assemble at Penang International Airport for flight to Capital of Greece, Athens.</p>
+                    
+                    <p style="margin-bottom: 15px;"><strong>Day 2: Transit City - Chitose - Athens</strong><br />
+                    Athens City orientation tour such as Syntagma Square and stop at the Panathenaic and Stadium. Next, visit World Famous site of Acropolis, the Parthenon.</p>
+                    
+                    <p style="margin-bottom: 0;"><strong>Day 3: Athens - Diakopto Kalavrita</strong><br />
+                    Visit the Olive Farm. Proceed to take train from Diakopto to Kalavrita.</p>
+
+                    <p style="margin-bottom: 0;"><strong>Day 4: Kalavrita - Corinth Canal Cruise - Athens</strong><br />
+                    Enjoy Corinth Canal Cruise. Then, proceed to Nafplio before back to Athens.</p>
+
+                    <p style="margin-bottom: 0;"><strong>Day 5: Athens - Mykonos</strong><br />
+                    Transfer to the port of Rafina and depart by super ferry to Mykonos (one of the famous Greek Island). Then walk around the town enjoying the shops and boutiques.</p>
+
+                    <p style="margin-bottom: 0;"><strong>Day 6: Mykonos - Santorini</strong><br />
+                    Proceed to Santorini by ferry.</p>
+
+                    <p style="margin-bottom: 0;"><strong>Day 7: Santorini</strong><br />
+                    Walking tour including Fira Town, traditional village of Oia. Later walk on the beautiful volcanic Black Sand Beach of Kamari.</p>
+
+                  <p style="margin-bottom: 0;"><strong>Day 8: Santorini - Athens  </strong><br />
+                    Transfer to take super ferry to Athens. Upon arrival, transfer to hotel relax and enjoy.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 9: Athens - Transit City</strong><br />
+                    Proceed to Athens city orientation tour. Next, transfer to International Airport for flight to Penang.</p>
+
+                   <p style="margin-bottom: 0;"><strong>Day 10: Arrival Penang</strong><br />
+                   Arrival Penang.</p>
+
+                <hr style="border: 0; border-top: 1px dashed rgba(229, 149, 142, 0.4); margin: 25px 0;" />
+
+            
+
+                <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 15px; background: rgba(229, 149, 142, 0.04); padding: 15px; border-radius: 10px; text-align: left;">
+
+                    <div>
+                        <h4 style="margin: 0 0 8px 0; color: #210440; font-size: 13px; font-weight: bold;">Package Includes:</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 1.6; color: #555555;">
+                            <li><span style="color: #e5958e;">✔</span> 9N hotel accommodation</li>
+                            <li><span style="color: #e5958e;">✔</span> Daily breakfast &amp; selected meals</li>
+                            <li><span style="color: #e5958e;">✔</span> Airport transfer</li>
+                            <li><span style="color: #e5958e;">✔</span> Professional English and Malay speaking tour guide</li>
+                            <li><span style="color: #e5958e;">✔</span> Entrance fees to attractions</li>
+                            <li><span style="color: #e5958e;">✔</span> Ferry tickets between islands</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="card" style="margin-top: 50px; padding: 40px; background: #ffffff; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h3 style="font-size: 24px; color: #210440; margin: 0 0 10px 0;">Secure Your Custom Travel Itinerary</h3>
+                <p style="color: #666666; font-size: 14px;">Ready to elevate your journey? Submit your details to receive full package updates and booking confirmation.</p>
+            </div>
+
+<form action="#success" method="post" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 800px; margin: 0 auto;">        
+        <!-- Full Name field -->
+        <div style="display: flex; flex-direction: column;">
+            <label style="font-size: 12px; font-weight: bold; color: #210440; margin-bottom: 8px; letter-spacing: 0.5px;">FULL NAME</label>
+            <input type="text" name="username" placeholder="e.g. Abdul Razak" required="required" style="padding: 12px; border: 1px solid #e5958e; border-radius: 6px; font-family: inherit; outline: none;" />
         </div>
-    </div>
 
-    <!-- Footer Area Block -->
-    <div class="footer" style="margin-top: 60px;">
-        <p>&copy; 2026 Wander &amp; Co. All Rights Reserved.</p>
-    </div>
+   
+        <div style="display: flex; flex-direction: column;">
+            <label style="font-size: 12px; font-weight: bold; color: #210440; margin-bottom: 8px; letter-spacing: 0.5px;">EMAIL</label>
+            <input type="email" name="useremail" placeholder="e.g. razak@gmail.com" required="required" style="padding: 12px; border: 1px solid #e5958e; border-radius: 6px; font-family: inherit; outline: none;" />
+        </div>
 
-</body></html>
+       
+        <div style="display: flex; flex-direction: column;">
+            <label style="font-size: 12px; font-weight: bold; color: #210440; margin-bottom: 8px; letter-spacing: 0.5px;">PHONE NUMBER</label>
+            <input type="phone number" name="phone number" placeholder="e.g. 018-xxx xxxx" required="required" style="padding: 12px; border: 1px solid #e5958e; border-radius: 6px; font-family: inherit; outline: none;" />
+        </div>
+
+  
+        <div style="display: flex; flex-direction: column;">
+            <label style="font-size: 12px; font-weight: bold; color: #210440; margin-bottom: 8px; letter-spacing: 0.5px;">CHOOSE ITINERARY</label>
+            <select name="package_choice" style="padding: 12px; border: 1px solid #e5958e; border-radius: 6px; font-family: inherit; background: #ffffff; outline: none;">
+                <option value="recommended">11 Days Aurora</option>
+                <option value="standard">10 Days Greece</option>
+                <option value="custom">Customize/Others</option>
+            </select>
+        </div>
+
+
+        <div style="grid-column: span 2; display: flex; flex-direction: column;">
+            <label style="font-size: 12px; font-weight: bold; color: #210440; margin-bottom: 8px; letter-spacing: 0.5px;">ADDITIONAL CUSTOMIZE REQUESTS (OPTIONAL)</label>
+            <textarea name="feedback_notes" rows="4" placeholder="Tell us about special dietary needs, flight preferences, or hotel upgrades" style="padding: 12px; border: 1px solid #e5958e; border-radius: 6px; font-family: inherit; resize: vertical; outline: none;"></textarea>
+        </div>
+
+
+        <div style="grid-column: span 2; text-align: center; margin-top: 10px;">
+            <input type="submit" value="Submit Travel Request" class="card-btn" style="background: #210440; color: #ffffff; padding: 12px 40px; cursor: pointer; font-size: 14px; border: none; border-radius: 20px; font-weight: bold;" />
+        </div>
+    </form>
+</div>
+
+</div> 
+
+<div class="footer" style="margin-top: 60px;">
+    <p>&copy; 2026 Wander &amp; Co. All Rights Reserved.</p>
+</div>
+
+<div id="success" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(33, 4, 64, 0.4); z-index: 9999; justify-content: center; align-items: center;">
+    <div style="background: #ffffff; padding: 40px; border-radius: 16px; text-align: center; max-width: 450px; width: 90%; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-top: 5px solid #ffba00; position: relative;">
+        <span style="font-size: 45px; display: block; margin-bottom: 15px;"></span>
+        <h3 style="color: #210440; font-family: 'Georgia', serif; font-size: 24px; margin: 0 0 12px 0;">Request Received!</h3>
+        <p style="color: #666666; font-size: 14px; line-height: 1.6; margin: 0 0 25px 0;">Thank you! Your travel request has been sent to Wander &amp; Co. We will notify you via your email shortly.</p>
+        
+        <a href="#" style="display: inline-block; background: #210440; color: #ffffff; text-decoration: none; padding: 12px 35px; border-radius: 25px; font-weight: bold; font-size: 13px;">
+            OK
+        </a>
+    </div>
+</div>
+
+<style type="text/css">
+    #success:target {
+        display: flex !important;
+    }
+</style>
+
+</body>
+</html>
