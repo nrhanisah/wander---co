@@ -486,3 +486,17 @@ div.catalog-banner-baru .banner-description-baru {
     background-color: #ffb703;
     color: #2b2d42;
 }
+
+.footer {
+    background-color: #210440;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 5px 0;
+}
