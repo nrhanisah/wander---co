@@ -442,3 +442,16 @@ body {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(29, 78, 216, 0.2);
 }
+.footer {
+    background-color: #210440;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 5px 0;
+}
