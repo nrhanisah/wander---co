@@ -165,12 +165,16 @@ body {
     clear: both;
 }
 
-#footer p {
-    margin: 5px 0;
+.footer {
+    background-color: #210440;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
-#footer .disclaimer {
-    color: #2e2e2e; /* Gives visibility to project declaration area */
-    font-style: italic;
-    margin-bottom: 15px;
+.footer p {
+    margin: 5px 0;
 }
