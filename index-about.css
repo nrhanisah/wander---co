@@ -154,13 +154,17 @@ body {
     margin-bottom: 10px;
 }
 
-/* Footer Section Rules */
-#footer {
-    background-color: #74cbe3;
-    color: #2e2e2e;
+}
+.footer {
+    background-color: #210440;
+    color: #ffffff;
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 80px;
-    font-size: 13px;
-    clear: both;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 5px 0;
 }
