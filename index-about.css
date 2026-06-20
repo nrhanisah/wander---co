@@ -223,6 +223,38 @@ body {
     line-height: 1.6;
 }
 
+.about-contact {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #cccccc;
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+
+.about-contact h3 {
+    font-size: 22px;
+    color: #210440; /* Ikut tema warna gelap agensi anda */
+    margin-bottom: 5px;
+}
+
+.about-contact p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.contact-details span {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 15px;
+    color: #333333;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
 .footer {
 	display: block;
 	width: 100%;
