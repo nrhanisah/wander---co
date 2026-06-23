@@ -16,7 +16,6 @@ body {
     padding: 40px 20px;
 }
 
-/* --- Shared Navigation Structure --- */
 .navbar {
     background-color: #ffffff;
     display: flex;
@@ -46,7 +45,6 @@ body {
     color: #e5958e; 
 }
 
-/* --- Top Destinations Styles --- */
 .hero-section {
     background-image: url('https://i.pinimg.com/1200x/b3/bf/59/b3bf59b52a5c5cce2005a4e1ebe75722.jpg');
     background-size: cover;
@@ -165,16 +163,15 @@ body {
 .sub-nav-bar a, 
 .sub-nav-btn, 
 .sub-nav-btn.active {
-    text-decoration: none !important;  /* Completely removes any underline */
-    color: #210440 !important;          /* Forces the text color to be solid black */
+    text-decoration: none !important;  
+    color: #210440 !important;          
     font-weight: bold;
     padding: 8px 16px;
-    border-bottom: none !important;     /* Removes the coral line underneath */
+    border-bottom: none !important;    
 }
 
-/* Optional: If you want a subtle change when hovering over them */
 .sub-nav-bar a:hover {
-    color: #e5958e !important;          /* Turns slightly pink only when hovered */
+    color: #e5958e !important;         
 }
 
 .featured-article {
@@ -197,7 +194,7 @@ body {
 
 .custom-video {
     width: 345px; 
-    height: 450px; /* Adjusted length slightly to balanced grid text presentation */
+    height: 450px; 
     object-fit: cover; 
     border-radius: 24px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
@@ -268,19 +265,18 @@ body {
     color: #210440;
 }
 
-/* --- Interactive Category Cards (XHTML Details System) --- */
 .cat-card details {
     width: 100%;
 }
 
 .cat-card-header {
     cursor: pointer;
-    list-style: none; /* Removes standard browser arrow */
+    list-style: none;
     outline: none;
 }
 
 .cat-card-header::-webkit-details-marker {
-    display: none; /* Safari compatibility */
+    display: none; 
 }
 
 .click-prompt {
@@ -293,7 +289,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Hidden container behavior that triggers open smoothly */
 .cat-card-content {
     margin-top: 15px;
     padding-top: 15px;
@@ -308,7 +303,6 @@ body {
     color: #210440;
 }
 
-/* Ensures text color inside the highlighted gold box stays highly readable */
 .cat-card.highlight-cat .cat-card-content p {
     color: #210440;
 }
@@ -318,25 +312,20 @@ body {
 }
 
 
-/* --- PASTE THE NEW CHOICE B CODE HERE (AT THE VERY BOTTOM) --- */
 
-/* Automatically changes the card background to mustard gold ONLY when open */
 .cat-card details[open] {
     background-color: #ffba00 !important;
     border-radius: 8px;
     
-    /* These negative margins expand the gold color to fill the card completely */
     margin: -31px -21px; 
     padding: 30px 20px;
 }
 
-/* Changes the border color of the card to match the gold when open */
 .cat-card:has(details[open]) {
     border-color: #ffba00 !important;
     background-color: #ffba00 !important;
 }
 
-/* Ensures all headings, text paragraphs, and labels stay clear and readable in dark blue on the gold background */
 .cat-card details[open] h4,
 .cat-card details[open] .cat-card-content p,
 .cat-card details[open] .click-prompt,
@@ -344,11 +333,10 @@ body {
     color: #210440 !important;
 }
 
-/* Adjusts the internal dashed line to match the deep midnight blue theme when open */
 .cat-card details[open] .cat-card-content {
     border-top: 1px dashed rgba(33, 4, 64, 0.4);
 }
-/* FAQ Element Styling */
+
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
@@ -375,7 +363,7 @@ body {
 }
 
 .faq-question::-webkit-details-marker {
-    display: none; /* Hide default arrow in webkit browsers */
+    display: none; 
 }
 
 .faq-question::after {
